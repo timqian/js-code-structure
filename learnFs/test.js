@@ -1,5 +1,5 @@
 var fs = require('fs');
-
+var a = require('../as');
 // fs.readFile('../package.json', 'utf8', function (err ,data) {
 //   console.log(data);
 // });

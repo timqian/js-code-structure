@@ -9,6 +9,7 @@
   "author": "timqian",
   "license": "ISC",
   "dependencies": {
-    "fs": "0.0.2"
+    "fs": "0.0.2",
+    "lodash": "^3.10.1"
   }
 }
