@@ -2,6 +2,14 @@
 
 Figure out relations between your js files(thorgh `require()`)
 
+## Usage
+
+
+1. npm install -g js-code-structure
+2. Go to the lib directory of the project from the terminal
+3. input `jcs` and hit enter a json file will show up in the directory
+
+
 ## 参考资料：
 
 - 如何有效地做unit test

@@ -1,17 +1,15 @@
 {
   "name": "js-code-structure",
-  "version": "0.0.0",
+  "version": "0.0.2",
   "description": "Analyse the structure of your js project(relations between js files)",
-  "main": "lib/index.js",
-  "bin": {"jss": "bin/jss.js"},
+  "bin": {"jcs": "bin/jcs.js"},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "timqian",
   "license": "ISC",
   "dependencies": {
-    "fs": "0.0.2",
-    "lodash": "^3.10.1"
+    "fs": "0.0.2"
   },
   "devDependencies": {
     "mocha": "^2.2.5"

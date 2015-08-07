@@ -1,11 +1,10 @@
 #!/usr/bin/env node
-var _ = require('lodash');
 var fs = require('fs');
 var getPathsSync = require('../lib/getPathsSync');
 var getRequireInfoSync = require('../lib/getRequireInfoSync');
 var relativePathToAbsolute = require('../lib/relativePathToAbsolute');
 
-var currentPath = process.cwd(); //the current working directory
+var currentPath = process.cwd(); //current working directory
 var paths = getPathsSync(currentPath);
 var relations = [];
 //console.log(paths);
@@ -18,9 +17,16 @@ var relations = paths.map(function (path) {
   //console.log(reqPaths);
   var obj = {};
   obj[path] = {reqPaths: reqPaths,
-               size: 0
+              // @Todo add size
+               size: 'todo'
               };
   return obj;
 });
 
-console.log(relations);
+
+var myJsonString = JSON.stringify(relations);
+console.log(myJsonString);
+fs.writeFile('codeRelations.json', myJsonString, function (err) {
+  if (err) throw err;
+  console.log('It\'s saved in codeRelations.json!');
+});
