@@ -8,6 +8,10 @@
   },
   "author": "timqian",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/timqian/jsCodeStructure"
+  },
   "dependencies": {
     "fs": "0.0.2"
   },
