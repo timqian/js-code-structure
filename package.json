@@ -2,7 +2,8 @@
   "name": "js-code-structure",
   "version": "0.0.0",
   "description": "Analyse the structure of your js project(relations between js files)",
-  "main": "index.js",
+  "main": "lib/index.js",
+  "bin": {"jss": "bin/jss.js"},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -11,5 +12,8 @@
   "dependencies": {
     "fs": "0.0.2",
     "lodash": "^3.10.1"
+  },
+  "devDependencies": {
+    "mocha": "^2.2.5"
   }
 }
