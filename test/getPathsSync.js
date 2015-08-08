@@ -6,6 +6,7 @@
 //   });
 // });
 
-// 需要在主目录下执行
+//
 var getPathsSync = require('../lib/getPathsSync');
-console.log(getPathsSync('.'));
+console.log('Paths under /Users/junhuachen/Documents/tim/jsCodeStructure/lib: ');
+console.log(getPathsSync('/Users/junhuachen/Documents/tim/jsCodeStructure/lib'));

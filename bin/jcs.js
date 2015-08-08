@@ -6,7 +6,6 @@ var relativePathToAbsolute = require('../lib/relativePathToAbsolute');
 
 var currentPath = process.cwd(); //current working directory
 var paths = getPathsSync(currentPath);
-var relations = [];
 //console.log(paths);
 
 var relations = paths.map(function (path) {
