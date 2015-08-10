@@ -4,9 +4,11 @@ Figure out relations between your js files(thorgh `require()`)
 
 ## Usage
 
-1. install the package: `npm install -g js-code-structure`
-2. Go to the lib directory of the project from the terminal
-3. input `jcs` and hit enter, then a json file describing the relations of your the js files will show up in the directory
+1. open terminal
+2. install the package: `npm install -g js-code-structure`
+2. Go to the directory of the project
+3. input `jss` and hit enter
+**then a html file describing the relations of your the js files will show up in the directory**
 
 
 ## 参考资料：
