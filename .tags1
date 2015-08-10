@@ -4,11 +4,3 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.8	//
-fs	/Users/junhuachen/Documents/tim/jsCodeStructure/lib/returnRelations.js	/^var fs = require('fs');$/;"	variable	line:1
-path	/Users/junhuachen/Documents/tim/jsCodeStructure/lib/returnRelations.js	/^var path = require('path');$/;"	variable	line:2
-getPathsSync	/Users/junhuachen/Documents/tim/jsCodeStructure/lib/returnRelations.js	/^var getPathsSync = require('.\/getPathsSync');$/;"	variable	line:3
-getRequireInfoSync	/Users/junhuachen/Documents/tim/jsCodeStructure/lib/returnRelations.js	/^var getRequireInfoSync = require('.\/getRequireInfoSync');$/;"	variable	line:4
-relativePathToAbsolute	/Users/junhuachen/Documents/tim/jsCodeStructure/lib/returnRelations.js	/^var relativePathToAbsolute = require('.\/relativePathToAbsolute');$/;"	variable	line:5
-deleteExt	/Users/junhuachen/Documents/tim/jsCodeStructure/lib/returnRelations.js	/^var deleteExt = require('.\/deleteExt');$/;"	variable	line:6
-exports	/Users/junhuachen/Documents/tim/jsCodeStructure/lib/returnRelations.js	/^module.exports = function (currentDir) {$/;"	function	line:8
-module.exports	/Users/junhuachen/Documents/tim/jsCodeStructure/lib/returnRelations.js	/^var deleteExt = require('.\/deleteExt');$/;"	function	line:6
