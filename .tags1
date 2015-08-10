@@ -4,17 +4,11 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.8	//
-path	/Users/junhuachen/Documents/tim/jsCodeStructure/bin/jss.js	/^var path = require('path');$/;"	variable	line:3
-getPathsSync	/Users/junhuachen/Documents/tim/jsCodeStructure/bin/jss.js	/^var getPathsSync = require('..\/lib\/getPathsSync');$/;"	variable	line:4
-getRequireInfoSync	/Users/junhuachen/Documents/tim/jsCodeStructure/bin/jss.js	/^var getRequireInfoSync = require('..\/lib\/getRequireInfoSync');$/;"	variable	line:5
-relativePathToAbsolute	/Users/junhuachen/Documents/tim/jsCodeStructure/bin/jss.js	/^var relativePathToAbsolute = require('..\/lib\/relativePathToAbsolute');$/;"	variable	line:6
-deleteExt	/Users/junhuachen/Documents/tim/jsCodeStructure/bin/jss.js	/^var deleteExt = require('..\/lib\/deleteExt');$/;"	variable	line:7
-currentDir	/Users/junhuachen/Documents/tim/jsCodeStructure/bin/jss.js	/^var currentDir = process.cwd(); \/\/current working directory$/;"	variable	line:9
-jsPaths	/Users/junhuachen/Documents/tim/jsCodeStructure/bin/jss.js	/^var jsPaths = getPathsSync(currentDir);$/;"	variable	line:10
-nodes	/Users/junhuachen/Documents/tim/jsCodeStructure/bin/jss.js	/^var nodes = [];$/;"	variable	line:11
-edges	/Users/junhuachen/Documents/tim/jsCodeStructure/bin/jss.js	/^var edges = [];$/;"	variable	line:12
-jsDir	/Users/junhuachen/Documents/tim/jsCodeStructure/bin/jss.js	/^var jsDir = '';$/;"	variable	line:13
-index	/Users/junhuachen/Documents/tim/jsCodeStructure/bin/jss.js	/^var index = 0; \/\/ node index$/;"	variable	line:14
-relations.nodes	/Users/junhuachen/Documents/tim/jsCodeStructure/bin/jss.js	/^var relations = {$/;"	property	line:60
-relations.edges	/Users/junhuachen/Documents/tim/jsCodeStructure/bin/jss.js	/^  nodes: nodes,$/;"	property	line:61
-myJsonString	/Users/junhuachen/Documents/tim/jsCodeStructure/bin/jss.js	/^var myJsonString = JSON.stringify(relations);$/;"	variable	line:64
+fs	/Users/junhuachen/Documents/tim/jsCodeStructure/lib/returnRelations.js	/^var fs = require('fs');$/;"	variable	line:1
+path	/Users/junhuachen/Documents/tim/jsCodeStructure/lib/returnRelations.js	/^var path = require('path');$/;"	variable	line:2
+getPathsSync	/Users/junhuachen/Documents/tim/jsCodeStructure/lib/returnRelations.js	/^var getPathsSync = require('.\/getPathsSync');$/;"	variable	line:3
+getRequireInfoSync	/Users/junhuachen/Documents/tim/jsCodeStructure/lib/returnRelations.js	/^var getRequireInfoSync = require('.\/getRequireInfoSync');$/;"	variable	line:4
+relativePathToAbsolute	/Users/junhuachen/Documents/tim/jsCodeStructure/lib/returnRelations.js	/^var relativePathToAbsolute = require('.\/relativePathToAbsolute');$/;"	variable	line:5
+deleteExt	/Users/junhuachen/Documents/tim/jsCodeStructure/lib/returnRelations.js	/^var deleteExt = require('.\/deleteExt');$/;"	variable	line:6
+exports	/Users/junhuachen/Documents/tim/jsCodeStructure/lib/returnRelations.js	/^module.exports = function (currentDir) {$/;"	function	line:8
+module.exports	/Users/junhuachen/Documents/tim/jsCodeStructure/lib/returnRelations.js	/^var deleteExt = require('.\/deleteExt');$/;"	function	line:6

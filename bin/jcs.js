@@ -8,7 +8,8 @@ var currentPath = process.cwd(); //current working directory
 var paths = getPathsSync(currentPath);
 //console.log(paths);
 
-var relations = paths.map(function (path) {
+var relations = paths
+.map(function (path) {
   var reqPaths = getRequireInfoSync(path)
   .map(function (reqPath) {
     return relativePathToAbsolute(path, reqPath);

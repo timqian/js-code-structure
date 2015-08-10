@@ -1,0 +1,26 @@
+	;
+	var s = new sigma({
+	  graph: g,
+	  renderer: {
+	    // IMPORTANT:
+	    // This works only with the canvas renderer, so the
+	    // renderer type set as "canvas" is necessary here.
+	    container: document.getElementById('container'),
+	    type: 'canvas'
+	  },
+	  settings: {
+			doubleClickEnabled: false,
+	    minEdgeSize: 2,
+	    maxEdgeSize: 4,
+			minArrowSize: 20,
+	    enableEdgeHovering: true,
+	    edgeHoverColor: 'edge',
+	    defaultEdgeHoverColor: '#000',
+	    edgeHoverSizeRatio: 1,
+	    edgeHoverExtremities: true
+	  }
+	});
+
+</script>
+</body>
+</html>
