@@ -1,9 +1,19 @@
 #!/usr/bin/env node
 var fs = require('fs');
 var path = require('path');
+var open = require('open');
 var returnRelations = require('../lib/returnRelations');
 
-var relations = returnRelations( process.cwd() );
+var currentDir = process.cwd();
+var addIgnore = [];
+if (process.argv[2] == '--ignore') {
+  for (var i = 3; i < process.argv.length; i++) {
+    // console.log(process.argv[i]);
+    addIgnore.push(process.argv[i]);
+    console.log(addIgnore);
+  }
+}
+var relations = returnRelations(currentDir, addIgnore);
 /****  generate html  *********************************/
 var output = [];
 
@@ -24,9 +34,11 @@ fs.writeFile(html2, strRelations, function (err, data) {
         if (err) throw err;
         output.push(data);
         var strOutput = Buffer.concat(output);
-        fs.writeFile('codeRelation.html', strOutput, function (err, data) {
+        fs.writeFile('jsCodeStructure.html', strOutput, function (err, data) {
           if (err) throw err;
-          console.log('html wrote');
+          console.log('jsCodeStructure.html wrote');
+          console.log(process.argv[2]);
+          open('jsCodeStructure.html');
         });
       });
     });

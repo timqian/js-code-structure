@@ -4,15 +4,24 @@ Figure out relations between your js files(thorgh `require()`)
 
 ## Usage
 
-1. open terminal
-2. install the package: `npm install -g js-code-structure`
-2. Go to the directory of the project
-3. input `jss` and hit enter
-**then a html file describing the relations of your the js files will show up in the directory**
+1. Open terminal
+2. Install the package: `npm install -g js-code-structure`
+3. Go to the directory of the project
+4. Input `jss` and hit enter
+**then a html file describing the relations of your the js files will show up**
+
+## Advanced Usage:
+
+1. Ignore some directory inside the directory:
+
+    `jss --ignore dirname1 dirname2 dirname3 ...`
+2. Show required files: hover on the node
+3. Show being required files: click the node
+
 
 ## Example： Appium code:
 
-![appium code](./assects/exampleAppium.png)
+![appium code](./assects/example.png)
 ## 参考资料：
 
 - [开发成命令行工具](http://jslite.io/2015/06/19/Nodejs-%E5%88%B6%E4%BD%9C%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%B7%A5%E5%85%B7/)

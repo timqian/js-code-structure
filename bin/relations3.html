@@ -1,26 +1,92 @@
-	;
-	var s = new sigma({
-	  graph: g,
-	  renderer: {
-	    // IMPORTANT:
-	    // This works only with the canvas renderer, so the
-	    // renderer type set as "canvas" is necessary here.
-	    container: document.getElementById('container'),
-	    type: 'canvas'
-	  },
-	  settings: {
-			doubleClickEnabled: false,
-	    minEdgeSize: 2,
-	    maxEdgeSize: 4,
-			minArrowSize: 20,
-	    enableEdgeHovering: true,
-	    edgeHoverColor: 'edge',
-	    defaultEdgeHoverColor: '#000',
-	    edgeHoverSizeRatio: 1,
-	    edgeHoverExtremities: true
-	  }
-	});
 
+sigma.classes.graph.addMethod('hoverIncommingEdges', function(e) {
+  var id = e.data.node.id;
+ // console.log(e.data);
+  //console.log(this.inNeighborsIndex[id]);
+  var inNeighbors = this.inNeighborsIndex[id];
+ // console.log(inNeighbors);
+  for (var i in inNeighbors) {
+    for (var j in inNeighbors[i]) {
+      inNeighbors[i][j].size = 2;
+      inNeighbors[i][j].color = '#000'
+    }
+  }
+});
+
+sigma.classes.graph.addMethod('unhoverIncommingEdges', function(e) {
+  var id = e.data.node.id;
+ // console.log(e.data);
+  //console.log(this.inNeighborsIndex[id]);
+  var inNeighbors = this.inNeighborsIndex[id];
+ // console.log(inNeighbors);
+  for (var i in inNeighbors) {
+    for (var j in inNeighbors[i]) {
+      inNeighbors[i][j].size = 1;
+      inNeighbors[i][j].color = '#ccc'
+    }
+  }
+});
+
+sigma.classes.graph.addMethod('hoverOutcommingEdges', function(e) {
+  var id = e.data.node.id;
+ // console.log(e.data);
+  //console.log(this.inNeighborsIndex[id]);
+  var outNeighbors = this.outNeighborsIndex[id];
+ // console.log(outNeighbors);
+  for (var i in outNeighbors) {
+    for (var j in outNeighbors[i]) {
+      outNeighbors[i][j].size = 2;
+      outNeighbors[i][j].color = '#000'
+    }
+  }
+});
+sigma.classes.graph.addMethod('unhoverOutcommingEdges', function(e) {
+  var id = e.data.node.id;
+ // console.log(e.data);
+  //console.log(this.inNeighborsIndex[id]);
+  var outNeighbors = this.outNeighborsIndex[id];
+ // console.log(outNeighbors);
+  for (var i in outNeighbors) {
+    for (var j in outNeighbors[i]) {
+      outNeighbors[i][j].size = 1;
+      outNeighbors[i][j].color = '#ccc'
+    }
+  }
+});
+// Instantiate sigma:
+s = new sigma({
+  renderer: {
+    container: document.getElementById('graph-container'),
+    type: 'canvas'
+  },
+  settings: {
+    doubleClickEnabled: false,
+    minEdgeSize: 0.5,
+    maxEdgeSize: 4,
+    enableEdgeHovering: true,
+    edgeHoverColor: 'edge',
+    defaultEdgeHoverColor: '#000',
+    edgeHoverSizeRatio: 2,
+    edgeHoverExtremities: true,
+  }
+});
+
+s.graph.read(g);
+s.refresh();
+
+s.bind('overNode', function (e) {
+  s.graph.hoverIncommingEdges(e);
+  s.refresh();
+});
+s.bind('outNode', function (e) {
+  s.graph.unhoverIncommingEdges(e);
+  s.graph.unhoverOutcommingEdges(e);
+  s.refresh();
+})
+s.bind('clickNode', function (e) {
+  s.graph.unhoverIncommingEdges(e);
+  s.graph.hoverOutcommingEdges(e);
+  s.refresh();
+});
+// console.log(s.graph);
 </script>
-</body>
-</html>
