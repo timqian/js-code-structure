@@ -8,7 +8,7 @@ Figure out relations between your js files(thorgh `require()`)
 
 1. Open terminal
 2. Install the package: `npm install -g js-code-structure`
-3. Go to the directory of your project
+3. Go to the directories of your project
 4. Input `jss`
 
 **then a html file describing the relations of your the js files will show up**
@@ -18,6 +18,8 @@ Figure out relations between your js files(thorgh `require()`)
 1. Ignore some directory inside the directory:
 
     `jss --ignore dirname1 dirname2 dirname3 ...`
+
+    > these dirs are ignored by default: `['node_modules', '.git', 'dist', 'build', 'doc', 'test', 'bin', 'submodules']`
 2. Show required files: hover on the node
 3. Show being required files: click the node
 
