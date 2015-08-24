@@ -2,7 +2,7 @@
 
 [![npm](https://img.shields.io/npm/v/npm.svg)](https://www.npmjs.com/package/js-code-structure)
 
-Figure out relations between your js files(thorgh `require()`)
+Figure out relations between your js files(thorgh `require()` and `import`)
 
 ## Usage
 
@@ -19,7 +19,7 @@ Figure out relations between your js files(thorgh `require()`)
 
     `jss --ignore dirname1 dirname2 dirname3 ...`
 
-    > these dirs are ignored by default: `['node_modules', '.git', 'dist', 'build', 'doc', 'test', 'bin', 'submodules']`
+    > these dirs are ignored by default: `['node_modules', '.git', 'dist', 'build', 'doc', 'test', 'submodules']`
 2. Show required files: hover on the node
 3. Show being required files: click the node
 
@@ -27,6 +27,11 @@ Figure out relations between your js files(thorgh `require()`)
 ## Example： Appium code:
 
 ![appium code](./assets/example.png)
+
+## Tools
+
+[sigma.js](http://sigmajs.org/)
+
 ## 参考资料：
 
 - [开发成命令行工具](http://jslite.io/2015/06/19/Nodejs-%E5%88%B6%E4%BD%9C%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%B7%A5%E5%85%B7/)

@@ -10,7 +10,7 @@ if (process.argv[2] == '--ignore') {
   for (var i = 3; i < process.argv.length; i++) {
     // console.log(process.argv[i]);
     addIgnore.push(process.argv[i]);
-    console.log(addIgnore);
+    // console.log(addIgnore);
   }
 }
 var relations = returnRelations(currentDir, addIgnore);
@@ -37,7 +37,7 @@ fs.writeFile(html2, strRelations, function (err, data) {
         fs.writeFile('jsCodeStructure.html', strOutput, function (err, data) {
           if (err) throw err;
           console.log('jsCodeStructure.html wrote');
-          console.log(process.argv[2]);
+          // console.log(process.argv[2]);
           open('jsCodeStructure.html');
         });
       });

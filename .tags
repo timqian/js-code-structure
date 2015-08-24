@@ -28,3 +28,9 @@ relativePathToAbsolute	/Users/junhuachen/Documents/tim/jsCodeStructure/lib/retur
 deleteExt	/Users/junhuachen/Documents/tim/jsCodeStructure/lib/returnRelations.js	/^var deleteExt = require('.\/deleteExt');$/;"	variable	line:6
 exports	/Users/junhuachen/Documents/tim/jsCodeStructure/lib/returnRelations.js	/^module.exports = function (currentDir) {$/;"	function	line:8
 module.exports	/Users/junhuachen/Documents/tim/jsCodeStructure/lib/returnRelations.js	/^var deleteExt = require('.\/deleteExt');$/;"	function	line:6
+Analyse the structure of your js project	/Users/junhuachen/Documents/tim/jsCodeStructure/README.md	/^## Analyse the structure of your js project$/;"	function	line:1
+Usage	/Users/junhuachen/Documents/tim/jsCodeStructure/README.md	/^## Usage$/;"	function	line:7
+Advanced Usage:	/Users/junhuachen/Documents/tim/jsCodeStructure/README.md	/^## Advanced Usage:$/;"	function	line:16
+Example： Appium code:	/Users/junhuachen/Documents/tim/jsCodeStructure/README.md	/^## Example： Appium code:$/;"	function	line:27
+参考资料：	/Users/junhuachen/Documents/tim/jsCodeStructure/README.md	/^## 参考资料：$/;"	function	line:30
+License: MIT	/Users/junhuachen/Documents/tim/jsCodeStructure/README.md	/^## License: MIT$/;"	function	line:35
