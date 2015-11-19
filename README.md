@@ -8,7 +8,7 @@ Figure out relations between your js files(thorgh `require()` and `import`)
 
 1. Open terminal
 2. Install the package: `npm install -g js-code-structure`
-3. Go to the directories of your project
+3. Go to the directory of your project
 4. Input `jss`
 
 **then a html file describing the relations of your the js files will show up**
