@@ -1,8 +1,12 @@
 ## Analyse the structure of your js project
 
-[![npm](https://img.shields.io/npm/v/npm.svg)](https://www.npmjs.com/package/js-code-structure)
+[![npm](https://nodei.co/npm/js-code-structure.png?downloadRank=true)](https://www.npmjs.com/package/js-code-structure)
 
 Figure out relations between your js files(thorgh `require()` and `import`)
+
+## Example： Appium code:
+
+![appium code](./assets/example.png)
 
 ## Usage
 
@@ -23,10 +27,6 @@ Figure out relations between your js files(thorgh `require()` and `import`)
 2. Show required files: hover on the node
 3. Show being required files: click the node
 
-
-## Example： Appium code:
-
-![appium code](./assets/example.png)
 
 ## Tools
 
