@@ -1,3 +1,5 @@
+## Figure out relations between your js files(thorgh `require()` and `import`)
+
 [![npm](https://nodei.co/npm/js-code-structure.png?downloadRank=true)](https://www.npmjs.com/package/js-code-structure)
 
 ## Example： Appium code:
