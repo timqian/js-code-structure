@@ -6,9 +6,9 @@
 
 ![appium code](./assets/example.png)
 
-### Installation
+### Install
 
-1. Install the package: `npm install -g js-code-structure`
+`npm install -g js-code-structure`
 
 ### Usage
 
