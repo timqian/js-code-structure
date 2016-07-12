@@ -1,6 +1,6 @@
 var fs = require('fs');
 var returnRelations = require('../lib/returnRelations');
-var relationsInAppium = returnRelations('/Users/junhuachen/Documents/dev/appium');
+var relationsInAppium = returnRelations('/Users/timqian/Documents/javascript/js-code-structure');
 
 var nodeIds = relationsInAppium.nodes.map(function (node) {
   return node.id;

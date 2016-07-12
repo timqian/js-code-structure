@@ -19,7 +19,11 @@
     "open": "0.0.5"
   },
   "devDependencies": {
-    "mocha": "^2.2.5"
+    "mocha": "^2.2.5",
+    "should": "^9.0.2"
   },
-  "keywords":["file structure", "代码结构分析"]
+  "keywords": [
+    "file structure",
+    "代码结构分析"
+  ]
 }
