@@ -15,7 +15,7 @@ if (process.argv[2] == '--ignore') {
 }
 var relations = returnRelations(currentDir, addIgnore);
 var strRelations = JSON.stringify(relations);
-var html1 = fs.readFileSync('./bin/1.html').toString();
-var html2 = fs.readFileSync('./bin/2.html').toString();
+var html1 = fs.readFileSync( path.resolve(path.dirname(__filename), '1.html') ).toString();
+var html2 = fs.readFileSync( path.resolve(path.dirname(__filename), '2.html') ).toString();
 fs.writeFileSync('./jsCodeStructure.html', html1 + strRelations + html2);
 open('jsCodeStructure.html')
