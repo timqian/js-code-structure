@@ -1,6 +1,6 @@
 {
   "name": "js-code-structure",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "description": "Analyse the structure of your js project(relations between js files)",
   "bin": {
     "jcs": "bin/jcs.js",
