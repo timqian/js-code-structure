@@ -16,7 +16,7 @@
     "url": "https://github.com/timqian/jsCodeStructure"
   },
   "dependencies": {
-    "open": "0.0.5"
+    "open": "7.0.0"
   },
   "devDependencies": {
     "mocha": "^2.2.5",
